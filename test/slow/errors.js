@@ -3,18 +3,16 @@ const test = require('tape')
 
 const proxyquire = require('proxyquire')
 
+const createMock = require('../helpers/createMock.js')
+
 // Polyfill fetch() for bitcoin-fee:
 global.fetch = require('node-fetch')
-const bestFee = proxyquire('../..', {
-  'bitcoin-fee': {
-    SERVICES: ['a', 'b'],
-    fetchFee () {
-      return Promise.reject(new Error('Test Error'))
-    }
-  }
-})
 
 test('can error out', t => {
+  const bestFee = proxyquire('../..', {
+    'bitcoin-fee': createMock(() => Promise.reject(new Error('Test Error')))
+  })
+
   const timeout = setTimeout(() => t.end('timeout'), 35 * 1000)
 
   bestFee.fetchHigh()
