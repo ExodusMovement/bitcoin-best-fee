@@ -38,6 +38,12 @@ Fetch the mean average fee from all the endpoints.
 
 Fetch the median average fee from all the endpoints.
 
+## Tests
+
+Run `npm test` to run the linter and basic test suite.
+
+Run `npm run test-slow` to run additional slow tests. The slow tests are contained in `test/slow/`. _Warning: This takes 30s or more to run; be patient._
+
 ## License
 
 MIT

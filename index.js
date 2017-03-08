@@ -44,5 +44,5 @@ function getFeeList () {
     })
   }
   // Retry every second for 30 seconds:
-  return pRetry(run, {retries: 30, minTimeout: 1000})
+  return pRetry(run, {retries: 30, maxTimeout: 1000})
 }
