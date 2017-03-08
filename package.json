@@ -1,0 +1,36 @@
+{
+  "name": "bitcoin-best-fee",
+  "version": "0.0.0",
+  "description": "Get recommended bitcoin fees from a variety of endpoints",
+  "main": "index.js",
+  "scripts": {
+    "unit": "tape test/*.js | tap-spec",
+    "test": "npm run lint && npm run unit",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExodusMovement/bitcoin-best-fee.git"
+  },
+  "keywords": [
+    "Bitcoin",
+    "fee"
+  ],
+  "author": "The Exodus Movement, Inc. (https://www.exodus.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ExodusMovement/bitcoin-best-fee/issues"
+  },
+  "homepage": "https://github.com/ExodusMovement/bitcoin-best-fee#readme",
+  "devDependencies": {
+    "node-fetch": "^1.6.3",
+    "standard": "^9.0.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "bitcoin-fee": "0.0.2",
+    "median": "0.0.2",
+    "p-retry": "^1.0.0"
+  }
+}
