@@ -20,11 +20,11 @@ function queryFees () {
 }
 
 exports.fetchHigh = function () {
-  return getFeeList().then(arr => arr.reduce((highest, fee) => fee > highest ? fee : highest, 0))
+  return getFeeList().then(arr => arr.reduce((highest, fee) => fee > highest ? fee : highest))
 }
 
 exports.fetchLow = function () {
-  return getFeeList().then(arr => arr.reduce((lowest, fee) => fee < lowest ? fee : lowest, 0))
+  return getFeeList().then(arr => arr.reduce((lowest, fee) => fee < lowest ? fee : lowest))
 }
 
 exports.fetchMean = function () {
