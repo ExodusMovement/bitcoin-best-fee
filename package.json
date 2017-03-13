@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-best-fee",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get recommended bitcoin fees from a variety of endpoints",
   "main": "index.js",
   "scripts": {
