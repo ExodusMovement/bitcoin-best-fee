@@ -1,4 +1,4 @@
-0.0.3 / 2017-03-13
+0.0.3 / 2017-03-31
 ------------------
 - Increase polling interval from 2 mins to 10 mins.
 
