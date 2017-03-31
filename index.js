@@ -6,7 +6,7 @@ const median = require('median')
 const fees = {}
 
 queryFees()
-let interval = setInterval(queryFees, 2 * 60 * 1000)
+let interval = setInterval(queryFees, 10 * 60 * 1000)
 // .unref() must be called in Node, but browsers and electron don't support it
 if (typeof interval.unref === 'function') interval.unref()
 
