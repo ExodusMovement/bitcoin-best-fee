@@ -31,7 +31,7 @@
     "tape": "^4.6.3"
   },
   "dependencies": {
-    "bitcoin-fee": "^1.0.0",
+    "bitcoin-fee": "^2.0.0",
     "median": "0.0.2",
     "p-retry": "^1.0.0"
   }
